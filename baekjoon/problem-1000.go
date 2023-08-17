@@ -1,9 +1,9 @@
 package main
-// import "fmt"
+import "fmt"
 
-// func main() {
-// 	var x int
-// 	var y int
-// 	fmt.Scan(&x, &y)
-// 	fmt.Println(x+y)
-// }
+func main() {
+	var x int
+	var y int
+	fmt.Scan(&x, &y)
+	fmt.Println(x+y)
+}
