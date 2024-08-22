@@ -10,6 +10,7 @@ func main() {
    fmt.Scanln(&n)
    var str string
    fmt.Scanln(&str)
+   
    for {
       if strings.Contains(str, "PS4") {
          index := strings.Index(str, "PS4")
@@ -20,6 +21,7 @@ func main() {
       } else {
          break
       }
-   } 
+   }
+   
    fmt.Println(str)
 }
