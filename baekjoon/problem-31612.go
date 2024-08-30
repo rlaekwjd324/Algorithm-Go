@@ -12,6 +12,7 @@ func main() {
    fmt.Scanf("%v", &word)
    word = strings.TrimSpace(word)
    wordArr := strings.Split(word, "")
+   
    var sum = 0
    for i := 0; i < t; i++ {
       if wordArr[i] == "o"{
