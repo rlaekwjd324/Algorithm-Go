@@ -36,6 +36,7 @@ func main() {
             if arr[j] == "" && temp[j] == "C" {
                arr[i] = "C"
                arr[j] = "P"
+               break
             }
          }
       } else {
@@ -43,6 +44,7 @@ func main() {
             if arr[j] == "" && temp[j] == "P" {
                arr[i] = "P"
                arr[j] = "C"
+               break
             }
          }
       }
