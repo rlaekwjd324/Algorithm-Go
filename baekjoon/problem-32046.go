@@ -15,6 +15,7 @@ func main() {
 	for {
 		var t int
 		fmt.Fscan(reader, &t)
+		
 		if t == 0 {
 			return
 		}
