@@ -2,8 +2,8 @@ package main
 
 import (
    "bufio"
-	"fmt"
-	"os"
+   "fmt"
+   "os"
    "strings"
 )
 
@@ -22,12 +22,12 @@ func main() {
       line := ""
       if i == 0 {
          line += strings.Repeat("*", n)
-         line += strings.Repeat("X", n)
+         line += strings.Repeat("x", n)
          line += strings.Repeat("*", n)
       }else if i == 1 {
          line += strings.Repeat(" ", n)
-         line += strings.Repeat("X", n)
-         line += strings.Repeat("X", n)
+         line += strings.Repeat("x", n)
+         line += strings.Repeat("x", n)
       }else if i == 2 {
          line += strings.Repeat("*", n)
          line += strings.Repeat(" ", n)
