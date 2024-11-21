@@ -1,0 +1,36 @@
+package main
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
+
+var reader *bufio.Reader = bufio.NewReader(os.Stdin)
+var writer *bufio.Writer = bufio.NewWriter(os.Stdout)
+
+func main() {
+	defer writer.Flush()
+
+	var n int
+	fmt.Fscanln(reader, &n)
+
+	min := 200000
+	max := 0
+	for i := 0; i < n; i++ {
+		var from, to int
+		fmt.Fscanln(reader, &from, &to)
+
+		if min > to {
+			min = to
+		}
+		if max < from {
+			max = from
+		}
+	}
+	if min >= max {
+		fmt.Fprintf(writer, "%v %v\n", min-max+1, max)
+		return
+	}
+	fmt.Fprintln(writer, "bad news")
+}
