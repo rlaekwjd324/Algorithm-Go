@@ -2,8 +2,8 @@ package main
 
 import (
    "bufio"
-	"fmt"
-	"os"
+   "fmt"
+   "os"
    "strings"
 )
 
@@ -35,5 +35,4 @@ func main() {
       }
       fmt.Fprintln(writer, answer)
    }
-
 }
