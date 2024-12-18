@@ -2,8 +2,8 @@ package main
 
 import (
    "bufio"
-	"fmt"
-	"os"
+   "fmt"
+   "os"
 )
 
 var reader *bufio.Reader = bufio.NewReader(os.Stdin)
@@ -28,5 +28,4 @@ func main() {
    }
    
    fmt.Fprintf(writer, "%v\n", count)
-
 }
