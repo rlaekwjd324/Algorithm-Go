@@ -2,8 +2,8 @@ package main
 
 import (
    "bufio"
-	"fmt"
-	"os"
+   "fmt"
+   "os"
 )
 
 var reader *bufio.Reader = bufio.NewReader(os.Stdin)
@@ -16,12 +16,12 @@ func main() {
    fmt.Fscan(reader, &n)
    fmt.Fscan(reader, &s)
    
-   c := 0
+   c := 1
    for i := 1; i < n; i++ {
       var t int
       fmt.Fscan(reader, &t)
       
-      if s >= t {
+      if s < t {
          c++
       }
    }
