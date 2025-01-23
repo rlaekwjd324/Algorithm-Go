@@ -19,7 +19,6 @@ func main() {
    for i := 0; i < n; i++ {
       var a int
       fmt.Fscan(reader, &a)
-      
       sum += ((a+1)/2)
    }
 
