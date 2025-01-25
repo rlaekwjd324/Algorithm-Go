@@ -14,6 +14,5 @@ func main() {
 
    var n int
    fmt.Fscan(reader, &n)
-
    fmt.Fprintln(writer, n/10)
 }
