@@ -16,6 +16,7 @@ func main() {
    fmt.Fscan(reader, &n, &a, &b)
 
    count := 0
+   
    for i := 1; i <= n; i++ {
       if i % a != 0 && i % b != 0 {
          continue
