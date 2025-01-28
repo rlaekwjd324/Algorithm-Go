@@ -14,7 +14,7 @@ func main() {
 
    var a, b int
    fmt.Fscan(reader, &a, &b)
-   sum := a*1000 + b*10000
+   sum := a * 1000 + b * 10000
 
    fmt.Fprintln(writer, sum)
 }
