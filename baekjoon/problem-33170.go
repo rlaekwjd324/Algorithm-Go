@@ -14,6 +14,7 @@ func main() {
 
    var a, b, c int
    fmt.Fscan(reader, &a, &b, &c)
+   
    sum := a+b+c
 
    if sum <= 21 {
