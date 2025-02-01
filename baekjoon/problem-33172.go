@@ -20,21 +20,22 @@ func main() {
       if n % (i+1) != 0 {
          continue
       }
+      isSame := true
       for j := 0; j <= i; j++ {
-         isSame := true
          t := w[j]
          for k := 1; k < n/(i+1); k++ {
-            fmt.Println(w[j])
-            fmt.Println(t)
-            if w[k*i+j] != t {
+            if w[k*(i+1)+j] != t {
                isSame = false
                break
             }
          }
-         if isSame {
-            fmt.Fprintln(writer, "Yes")
-            return
+         if !isSame {
+            break
          }
+      }
+      if isSame {
+         fmt.Fprintln(writer, "Yes")
+         return
       }
    }
    fmt.Fprintln(writer, "No")
