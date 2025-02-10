@@ -21,9 +21,11 @@ func main() {
       
       a := ""
       for i, v := range w {
-         if i > 0 && int(v) >= 65 && int(v) <= 90 {
-            a += "_"
-            a += fmt.Sprint(int(v)+32)
+         if int(v) >= 65 && int(v) <= 90 {
+            if i > 0 {
+               a += "_"
+            }
+            a += string(int(v)+32)
             continue
          }
          a += string(v)
