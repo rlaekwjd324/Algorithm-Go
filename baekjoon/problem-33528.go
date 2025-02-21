@@ -15,7 +15,7 @@ func main() {
    var n string
    fmt.Fscan(reader, &n)
    
-   fmt.Fprint(writer, n)
+   fmt.Fprintln(writer, n)
    for i := 0; i < 25; i++ {
       a := ""
       for _, v := range n {
