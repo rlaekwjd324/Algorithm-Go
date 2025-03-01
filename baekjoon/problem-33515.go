@@ -19,5 +19,6 @@ func main() {
       fmt.Fprintf(writer, "%v\n", b)
       return
    }
+   
    fmt.Fprintf(writer, "%v\n", a)
 }
