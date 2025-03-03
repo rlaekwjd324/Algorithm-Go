@@ -25,10 +25,12 @@ func main() {
             fmt.Fprintln(writer, strings.Repeat("#", n))
             continue
          }
+         
          fmt.Fprint(writer, "#")
          fmt.Fprint(writer, strings.Repeat("J", n-2))
          fmt.Fprint(writer, "#\n")
       }
+      
       fmt.Fprint(writer, "\n")
    }
 }
