@@ -21,7 +21,7 @@ func main() {
       
       sum := 0
       for  j:=0; j<n; j++ {
-         sum += (a+j*d)
+         sum += (a + j * d)
       }
       
       fmt.Fprintf(writer, "%v\n", sum)
