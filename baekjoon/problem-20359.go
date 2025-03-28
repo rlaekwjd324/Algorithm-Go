@@ -14,6 +14,7 @@ func main() {
    
    var n int
    fmt.Fscan(reader, &n)
+   
    o := 0
    p := 0
    for {
