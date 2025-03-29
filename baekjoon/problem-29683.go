@@ -19,7 +19,6 @@ func main() {
    for i := 0; i < n; i++ {
       var v int
       fmt.Fscan(reader, &v)
-      
       c += (v/a)
    }
 
