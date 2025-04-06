@@ -22,6 +22,7 @@ func main() {
       
       sum += s
    }
+   
    if sum % x == 0 {
       fmt.Fprintf(writer, "%v\n", 1)
       return
