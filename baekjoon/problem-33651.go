@@ -15,6 +15,7 @@ func main() {
    
    var s string
    fmt.Fscan(reader, &s)
+   
    str := "UAPC"
    a := ""
    for _, v := range str {
