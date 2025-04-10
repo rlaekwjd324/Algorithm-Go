@@ -24,6 +24,7 @@ func main() {
          min = m
       }
    }
+   
    if min == 2147483648 {
       fmt.Fprintln(writer, -1)
       return
