@@ -23,7 +23,6 @@ func main() {
 
       arr[i] = a
    }
-   
    fmt.Fprintln(writer, countTarget(arr, s))
 }
 
