@@ -18,7 +18,6 @@ func main() {
    fmt.Fscan(reader, &fn, &cn, &en, &bn)
    var q int
    fmt.Fscan(reader, &q)
-   
    c := 0
    for i := 0; i < q; i++ {
       var a, i int
