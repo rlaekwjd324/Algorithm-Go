@@ -19,7 +19,7 @@ func main() {
       fmt.Fprintf(writer, "%v\n", m+7)
       return
    }
-   if m + 7 <= 29 {
+   if m + 7 <= 28 {
       fmt.Fprintf(writer, "%v\n", m+7)
       return
    }
