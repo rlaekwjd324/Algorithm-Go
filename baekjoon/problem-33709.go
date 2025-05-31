@@ -32,6 +32,7 @@ func main() {
    sum += t
    fmt.Fprintf(writer, "%v\n", sum)
 }
+
 func indexOf(s, t string) int {
    for i, v := range s {
       if string(v) == t {
