@@ -15,7 +15,7 @@ func main() {
    var n int
    fmt.Fscan(reader, &n)
    
-   max := 0
+   max := -200001
    for i := 0; i < n; i++ {
       var a int
       fmt.Fscan(reader, &a)
