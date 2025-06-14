@@ -14,5 +14,6 @@ func main() {
 
    var a float64
    fmt.Fscan(reader, &a)
+   
    fmt.Fprintf(writer, "%.2f\n", a/4)
 }
