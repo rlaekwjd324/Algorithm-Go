@@ -24,6 +24,7 @@ func main() {
          fmt.Fprintf(writer, "%v\n", 1)
          continue
       }
+      
       fmt.Fprintf(writer, "%v\n", 0)
    }
 }
