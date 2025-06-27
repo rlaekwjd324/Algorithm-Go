@@ -14,7 +14,6 @@ func main() {
 
    var x, n int
    fmt.Fscan(reader, &x, &n)
-   
    c := 0
    for{
       if x >= n {
