@@ -37,6 +37,7 @@ func main() {
    } else {
       fmt.Fprintf(writer, "%v ", h)
    }
+   
    if m < 10 {
       fmt.Fprintf(writer, "0%v\n", m)
       return
