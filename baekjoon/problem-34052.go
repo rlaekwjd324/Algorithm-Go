@@ -16,6 +16,7 @@ func main() {
    for i := 0; i < 4; i++ {
       var a int
       fmt.Fscan(reader, &a)
+      
       sum += a
    }
    
