@@ -32,6 +32,7 @@ func getSch(arr []int) string {
          return "None"
       }
    }
+   
    isSu := true
    for _, v := range arr {
       if v != 5 {
@@ -42,6 +43,7 @@ func getSch(arr []int) string {
    if isSu {
       return "Named"
    }
+   
    sum := 0
    for _, v := range arr {
       sum += v
