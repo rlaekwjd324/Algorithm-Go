@@ -15,7 +15,7 @@ func main() {
    var g, s, c int
    fmt.Fscan(reader, &g, &s, &c)
 
-   sum := g*3 + s*2 + c
+   sum := g * 3 + s * 2 + c
    if sum >= 8 {
       fmt.Fprintf(writer, "%v or %v\n", "Province", "Gold")
       return
