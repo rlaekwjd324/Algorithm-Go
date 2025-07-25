@@ -25,5 +25,6 @@ func main() {
          s--
       }
    }
+   
    fmt.Fprintf(writer, "%v\n", s)
 }
