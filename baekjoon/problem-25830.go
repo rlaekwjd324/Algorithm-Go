@@ -43,6 +43,5 @@ func main() {
    if s < 10 {
       ns = "0"+ns
    }
-   
    fmt.Fprintf(writer, "%v:%v:%v\n", nh, nm, ns)
 }
