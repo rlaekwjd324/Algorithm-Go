@@ -10,7 +10,7 @@ var reader *bufio.Reader = bufio.NewReader(os.Stdin)
 var writer *bufio.Writer = bufio.NewWriter(os.Stdout)
 
 func main() {
-	defer writer.Flush()
+   defer writer.Flush()
 
    var c, m, l int
    fmt.Fscan(reader, &c, &m, &l)
