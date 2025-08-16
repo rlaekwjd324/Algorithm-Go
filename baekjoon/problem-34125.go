@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"bufio"
 	"os"
-   "math"
+    "math"
 )
 
 var reader *bufio.Reader = bufio.NewReader(os.Stdin)
@@ -15,7 +15,7 @@ type Point struct {
 }
 
 func main() {
-	defer writer.Flush()
+   defer writer.Flush()
 
    var n, m int
    fmt.Fscan(reader, &n, &m)
