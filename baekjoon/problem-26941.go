@@ -19,7 +19,7 @@ func main() {
    i := 0
    h := 1
    for {
-      h+=2
+      h += 2
       i++
       arr = append(arr, h*h+arr[i-1])
       if arr[i] > n {
