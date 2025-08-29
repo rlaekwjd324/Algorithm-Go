@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"bufio"
 	"os"
-   "math"
+    "math"
 )
 
 var reader *bufio.Reader = bufio.NewReader(os.Stdin)
