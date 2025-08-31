@@ -23,10 +23,12 @@ func main() {
          fmt.Fprintf(writer, "%v\n", "Eurecom")
          continue
       }
+	   
       if lt*wt > le*we {
          fmt.Fprintf(writer, "%v\n", "TelecomParisTech")
          continue
       }
+	   
       fmt.Fprintf(writer, "%v\n", "Tie")
    }
 }
