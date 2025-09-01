@@ -18,6 +18,7 @@ func main() {
    if h < n-h {
       h = n-h
    }
+	
    if v < n-v {
       v = n-v
    }
