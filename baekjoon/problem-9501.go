@@ -16,15 +16,16 @@ func main() {
    fmt.Fscan(reader, &t)
    
    for i := 0; i < t; i++ {
-      var n, d int
+      var n int
+      var d float64
       fmt.Fscan(reader, &n, &d)
       
       cnt := 0
       for j := 0; j < n; j++ {
-         var v, f, c int
+         var v, f, c float64
          fmt.Fscan(reader, &v, &f, &c)
 
-         if d/v*c <= f {
+         if v*f/c >= d {
             cnt++
          }
       }
