@@ -16,6 +16,7 @@ func main() {
    fmt.Fscan(reader, &x, &y, &z)
 
    v := x*0.25+y*0.25+z*0.5
+	
    if v >= 90 {
       fmt.Fprintf(writer, "%v\n", "A")
       return
@@ -32,5 +33,6 @@ func main() {
       fmt.Fprintf(writer, "%v\n", "D")
       return
    }
+	
    fmt.Fprintf(writer, "%v\n", "F")
 }
