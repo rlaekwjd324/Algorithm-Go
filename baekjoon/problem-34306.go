@@ -15,5 +15,5 @@ func main() {
    var n, m int
    fmt.Fscan(reader, &n, &m)
    
-   fmt.Fprintf(writer, "%v\n", n*5280/m)
+   fmt.Fprintf(writer, "%v\n", n * 5280 / m)
 }
