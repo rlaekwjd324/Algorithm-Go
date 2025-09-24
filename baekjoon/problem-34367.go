@@ -19,10 +19,12 @@ func main() {
       if len(t) == 1 {
          break
       }
+	   
       s := 0
       for _, v := range t {
          s += int(v-'0')
       }
+	   
       t = fmt.Sprintf("%v", s)
    }
    
