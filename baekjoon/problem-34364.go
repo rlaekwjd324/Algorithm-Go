@@ -26,6 +26,5 @@ func main() {
       answer += string(rune(i))
       c *= 2
    }
-   
    fmt.Fprintf(writer, "%v\n", answer)
 }
