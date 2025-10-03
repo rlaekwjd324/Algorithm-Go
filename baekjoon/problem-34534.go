@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"bufio"
 	"os"
-   "strings"
-   "strconv"
+    "strings"
+    "strconv"
 )
 
 var reader *bufio.Reader = bufio.NewReader(os.Stdin)
