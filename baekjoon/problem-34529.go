@@ -15,7 +15,7 @@ func main() {
    var x, y, z, u, v, w int
    fmt.Fscan(reader, &x, &y, &z, &u, &v, &w)
    
-   s := (u/100)*x+(v/50)*y+(w/20)*z
+   s := (u/100) * x + (v/50) * y + (w/20) * z
 
    fmt.Fprintf(writer, "%v\n", s)
 }
