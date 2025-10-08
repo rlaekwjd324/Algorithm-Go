@@ -12,12 +12,12 @@ var writer *bufio.Writer = bufio.NewWriter(os.Stdout)
 func main() {
 	defer writer.Flush()
 
-   var a int
-   fmt.Fscan(reader, &a)
+    var a int
+    fmt.Fscan(reader, &a)
 
-   if a >= 13 {
-      a++
-   }
+    if a >= 13 {
+       a++
+    }
 
-   fmt.Fprintf(writer, "%v\n", a)
+    fmt.Fprintf(writer, "%v\n", a)
 }
