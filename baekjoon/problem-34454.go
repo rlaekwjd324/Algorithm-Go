@@ -12,13 +12,13 @@ var writer *bufio.Writer = bufio.NewWriter(os.Stdout)
 func main() {
 	defer writer.Flush()
 
-   var n, c, p int
-   fmt.Fscan(reader, &n, &c, &p)
+    var n, c, p int
+    fmt.Fscan(reader, &n, &c, &p)
 
-   if c*p >= n {
-      fmt.Fprintf(writer, "%v\n", "yes")
-      return
-   }
+    if c*p >= n {
+       fmt.Fprintf(writer, "%v\n", "yes")
+       return
+    }
 
-   fmt.Fprintf(writer, "%v\n", "no")
+    fmt.Fprintf(writer, "%v\n", "no")
 }
