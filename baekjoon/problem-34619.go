@@ -25,9 +25,9 @@ func main() {
       }
       c++
       tn++
-      if tn >= n {
+      if tn > n {
          tb++
-         tn = 0
+         tn = 1
          if tb > b {
             ta++
             tb = 1
