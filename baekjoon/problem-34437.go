@@ -16,6 +16,7 @@ func main() {
 	fmt.Fscan(reader, &n)
 
 	c := -1
+	
 	for {
 		c++
 		if n == 1 {
