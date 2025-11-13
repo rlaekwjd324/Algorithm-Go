@@ -18,6 +18,25 @@ func main() {
 	
 	if string(n[0]) == "-" {
 		n = n[1:]
+
+		if len(n) < 6 {
+			ni, _ := strconv.Atoi(n)
+			if ni <= 32768 {
+				fmt.Fprintf(writer, "%v\n", "short")
+				return
+			}
+		}
+	
+		if len(n) < 11 {
+			ni, _ := strconv.Atoi(n)
+			if ni <= 2147483648 {
+				fmt.Fprintf(writer, "%v\n", "int")
+				return
+			}
+		}
+	
+		fmt.Fprintf(writer, "%v\n", "long long")
+		return
 	}
 
 	if len(n) < 6 {
@@ -27,10 +46,10 @@ func main() {
 			return
 		}
 	}
-	
+
 	if len(n) < 11 {
 		ni, _ := strconv.Atoi(n)
-		if ni < 2147483649 {
+		if ni < 2147483648 {
 			fmt.Fprintf(writer, "%v\n", "int")
 			return
 		}
