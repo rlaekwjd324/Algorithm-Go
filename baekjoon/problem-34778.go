@@ -16,6 +16,7 @@ func main() {
 	for i := 0; i < 10; i++ {
 		var a int
 		fmt.Fscan(reader, &a)
+		
 		arr[a-1] = true
 	}
 
