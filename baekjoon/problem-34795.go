@@ -15,7 +15,6 @@ func main() {
 
 	var m, d float64
 	fmt.Fscan(reader, &m, &d)
-
 	
 	fmt.Fprintf(writer, "%v\n", math.Ceil(d/m))
 }
