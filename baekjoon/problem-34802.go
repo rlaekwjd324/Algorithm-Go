@@ -5,6 +5,7 @@ import (
     "fmt"
     "os"
 	"strings"
+	"strconv"
 )
 
 var reader *bufio.Reader = bufio.NewReader(os.Stdin)
@@ -17,13 +18,38 @@ func main() {
 	var s, v int
 	fmt.Fscan(reader, &a, &b, &s, &v)
 	
-	ah := strings.Split(a, ":")[0]
-	am := strings.Split(a, ":")[1]
-	as := strings.Split(a, ":")[2]
-	bh := strings.Split(b, ":")[0]
-	bm := strings.Split(b, ":")[1]
-	bs := strings.Split(b, ":")[2]
+	ah, _ := strconv.Atoi(strings.Split(a, ":")[0])
+	am, _ := strconv.Atoi(strings.Split(a, ":")[1])
+	as, _ := strconv.Atoi(strings.Split(a, ":")[2])
+	bh, _ := strconv.Atoi(strings.Split(b, ":")[0])
+	bm, _ := strconv.Atoi(strings.Split(b, ":")[1])
+	bs, _ := strconv.Atoi(strings.Split(b, ":")[2])
 
+	if ah > bh {
+		fmt.Fprintf(writer, "%v\n", 0)
+		return
+	}
+	if ah == bh {
+		if am > bm {
+			fmt.Fprintf(writer, "%v\n", 0)
+			return
+		}
+		if am == bm {
+			if as > bs {
+				fmt.Fprintf(writer, "%v\n", 0)
+				return
+			}
+		}
+	}
+
+	if v > 0 {
+		s = (s*(100-v))/100
+	}
+	as = as+s
+	am = am+as/60
+	as = as%60
+	ah = ah+am/60
+	am = am%60
 	if ah > bh {
 		fmt.Fprintf(writer, "%v\n", 0)
 		return
