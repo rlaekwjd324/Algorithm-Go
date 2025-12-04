@@ -19,6 +19,5 @@ func main() {
 		fmt.Fprintf(writer, "%v\n", "Time limit exceeded")
 		return
 	}
-	
 	fmt.Fprintf(writer, "%v\n", "Accepted")
 }
