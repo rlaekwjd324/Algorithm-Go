@@ -24,6 +24,7 @@ func main() {
 		s := 4-int(a[0]-'A')
 		t := string(a[1])
 		sum += s
+		
 		if s >= 2 {
 			if t == "1" {
 				bonus += 0.05
