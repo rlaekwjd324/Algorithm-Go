@@ -16,6 +16,7 @@ func main() {
 	fmt.Fscan(reader, &n, &c)
 	
 	min := 10201
+	
 	for i := 0; i < n; i++ {
 		var p, d, v int
 		fmt.Fscan(reader, &p, &d, &v)
