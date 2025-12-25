@@ -16,6 +16,7 @@ func main() {
 	fmt.Fscan(reader, &a, &t)
 	
 	p := 10 + 2 * (25 - a + t)
+	
 	if p < 0 {
 		p = 0
 	}
