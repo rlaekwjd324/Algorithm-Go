@@ -19,6 +19,6 @@ func main() {
 		fmt.Fprintf(writer, "%v\n", "Success!")
 		return
 	}
-		
+
 	fmt.Fprintf(writer, "%v\n", "Oh My God!")
 }
