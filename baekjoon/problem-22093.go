@@ -23,10 +23,12 @@ func main() {
 		if tn < 0 {
 			tn = 0
 		}
+		
 		tx := a
 		if tx > n-b {
 			tx = n-b
 		}
+		
 		fmt.Fprintf(writer, "%v %v\n", tn, tx)
 	}
 }
