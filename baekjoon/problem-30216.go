@@ -15,7 +15,7 @@ func main() {
 	var t int
 	fmt.Fscan(reader, &t)
 	
-	max := 0
+	max := 1
 	c := 1
 	pre := 0
 	for i := 0; i < t; i++ {
@@ -33,7 +33,7 @@ func main() {
 				max = c
 			}
 		} else {
-			pre = 0
+			pre = n
 			c = 1
 		}
 	}
