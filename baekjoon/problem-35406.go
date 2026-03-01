@@ -20,5 +20,5 @@ func main() {
 	boooo := strings.Count(s, "boooo")
 	bravo := strings.Count(s, "bravo")
 
-	fmt.Fprintf(writer, "%v\n", ha-boooo+bravo*3)
+	fmt.Fprintf(writer, "%v\n", ha - boooo + bravo * 3)
 }
