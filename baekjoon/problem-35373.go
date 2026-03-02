@@ -35,5 +35,6 @@ func main() {
 	}
 	
 	v := math.Ceil(ss/6.0)+math.Ceil(sm/8.0)+math.Ceil(sl/12.0)
+	
 	fmt.Fprintf(writer, "%v\n", v)
 }
