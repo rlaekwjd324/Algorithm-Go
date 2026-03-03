@@ -16,7 +16,7 @@ func main() {
 	fmt.Fscan(reader, &k, &s)
 	
 	q := s / k
-	v := s - (k-1)*q	
+	v := s - (k-1) * q	
 	
 	fmt.Fprintf(writer, "%v\n", v)
 }
