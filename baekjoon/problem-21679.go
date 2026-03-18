@@ -34,6 +34,7 @@ func main() {
 			fmt.Fprintf(writer, "%v\n", "yes")
 			continue
 		}
+		
 		fmt.Fprintf(writer, "%v\n", "no")
 	}
 }
