@@ -16,6 +16,7 @@ func main() {
 	bArr := make([]bool, 13)
 	vArr := make([]bool, 13)
 	kArr := make([]bool, 13)
+	
 	s, b, v, k := 0, 0, 0, 0
 	for i := 0; i < 51; i++ {
 		var t string
