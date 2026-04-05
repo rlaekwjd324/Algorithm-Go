@@ -18,7 +18,6 @@ func main() {
 	fmt.Fscan(reader, &n, &s)
 
 	arr := []string{"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "XI", "XII"}
-	
 	for i, v := range arr {
 		if strings.Contains(s, v) {
 			fmt.Fprintf(writer, "%v ", i+1)
