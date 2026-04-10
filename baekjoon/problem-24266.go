@@ -7,5 +7,6 @@ func main() {
 	fmt.Scan(&n)
 
 	fmt.Println(n * n * n)
+	
 	fmt.Println(3)
 }
