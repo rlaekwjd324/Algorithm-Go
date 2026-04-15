@@ -3,4 +3,5 @@
 2023.08.14 ~ 2026.04.28
 
 RIP
-https://www.acmicpc.net/board/view/165799
+
+<img width="1172" height="701" alt="image" src="https://github.com/user-attachments/assets/077315d9-b067-4647-843e-cdf24caf3be2" />
